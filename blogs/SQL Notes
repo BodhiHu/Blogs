@@ -1,0 +1,11 @@
+# SQL Notes
+
+### Alter table to add foreign key
+
+```
+ALTER TABLE git_project
+  ADD COLUMN mirror_id INT;
+ 
+ALTER TABLE git_project 
+  ADD CONSTRAINT fk_git_project_mirror_id FOREIGN KEY(mirror_id) REFERENCES git_project(id);
+```
