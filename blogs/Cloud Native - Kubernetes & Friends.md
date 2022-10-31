@@ -18,3 +18,10 @@ kubectl get pods --all-namespaces
 ```
 kubectl logs -n zadig zadig-post-upgrade-5s4rp
 ```
+
+#### hich Node Pod Runs On ?
+```
+kubectl get pod -o wide
+```
+
+#### [Kubernetes - Assigning Pod to Nodes](https://tachingchen.com/blog/kubernetes-assigning-pod-to-nodes/)
